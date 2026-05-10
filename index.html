@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRADING NOTES</title>
+    <meta name="description" content="個人交易學習系統 — Price Action、SMC、纏論、Volume Profile 完整知識庫">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%234A6FA5'/><path d='M6 20h4l3-6 3 4 4-8 4 6h4' stroke='%23fff' stroke-width='2' fill='none'/></svg>" type="image/svg+xml">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;600;800&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- MathJax for LaTeX rendering -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <aside id="sidebar" class="glass">
+            <div class="sidebar-header">
+                <div class="logo" onclick="Router.goHome()">
+                    <i class="fas fa-chart-line"></i>
+                    <span>TRADING NOTES</span>
+                </div>
+                <div class="search-box" id="sidebar-search-box" style="display:none">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="搜尋章節或內容...">
+                </div>
+            </div>
+
+            <div id="sidebar-subjects"></div>
+
+            <div id="sidebar-menu"></div>
+        </aside>
+
+        <div id="sidebar-overlay"></div>
+
+        <main id="main-content">
+            <header id="top-bar" class="glass">
+                <div class="left">
+                    <button id="mobile-menu-toggle" class="icon-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div id="breadcrumb-display" class="breadcrumb"></div>
+                </div>
+                <div class="right">
+                    <div class="font-controls glass">
+                        <button id="font-down" title="字體縮小">A-</button>
+                        <span id="font-size-display">16</span>
+                        <button id="font-up" title="字體放大">A+</button>
+                    </div>
+                    <button id="theme-toggle" class="icon-btn" title="切換主題">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div id="content"></div>
+        </main>
+    </div>
+
+    <script src="subjects.js"></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
