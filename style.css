@@ -1,25 +1,25 @@
 :root {
-    /* Soft Dark Mode */
-    --bg-base: #1A1D23;
-    --bg-sidebar: #242831;
-    --bg-card: rgba(50, 55, 65, 0.8);
-    --primary: #5A89C7;
-    --primary-glow: rgba(90, 137, 199, 0.12);
+    /* Ultra Dark Mode - Maximum Comfort */
+    --bg-base: #0B0C10;
+    --bg-sidebar: #121418;
+    --bg-card: rgba(46, 57, 68, 0.3);
+    --primary: #748D92;
+    --primary-glow: rgba(116, 141, 146, 0.2);
     --accent-orange: #D19A66;
     --accent-purple: #9380B8;
-    --accent-cyan: #6A9B95;
-    --text-main: #E8EAF0;
-    --text-muted: #A0A4B0;
-    --border: rgba(255, 255, 255, 0.12);
-    --glass-bg: rgba(36, 40, 49, 0.85);
-    --blur: 20px;
+    --accent-cyan: #124E66;
+    --text-main: #D3D9D4;
+    --text-muted: rgba(211, 217, 212, 0.55);
+    --border: rgba(116, 141, 146, 0.25);
+    --glass-bg: rgba(30, 38, 48, 0.65);
+    --blur: 25px;
     --base-font-size: 16px;
-    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.5);
 
     /* Sophisticated hierarchical design tokens for sidebar */
-    --bg-course: rgba(45, 50, 60, 0.9);
-    --bg-chapter: rgba(60, 67, 78, 0.5);
-    --bg-section: rgba(78, 85, 95, 0.3);
+    --bg-course: rgba(18, 20, 24, 0.95);
+    --bg-chapter: rgba(116, 141, 146, 0.04);
+    --bg-section: rgba(18, 78, 102, 0.04);
 
     /* Typography hierarchy */
     --font-course: 0.95rem;
@@ -32,38 +32,36 @@
     --space-section: 52px;
 
     /* Border accents */
-    --border-course: rgba(90, 137, 199, 0.25);
-    --border-chapter: rgba(90, 137, 199, 0.18);
-    --border-section: rgba(90, 137, 199, 0.1);
-    --border-course: rgba(255, 255, 255, 0.12);
-    --border-chapter: rgba(255, 255, 255, 0.08);
-    --border-section: rgba(255, 255, 255, 0.05);
+    --border-course: rgba(116, 141, 146, 0.2);
+    --border-chapter: rgba(116, 141, 146, 0.12);
+    --border-section: rgba(116, 141, 146, 0.05);
 
     /* Hierarchical text colors */
-    --text-course: #E8EAF0;
-    --text-chapter: #C1C7D0;
-    --text-section: #A0A4B0;
+    --text-course: #D3D9D4;
+    --text-chapter: rgba(211, 217, 212, 0.85);
+    --text-section: rgba(211, 217, 212, 0.7);
 }
 
 [data-theme="light"] {
-    --bg-base: #F5F7FA;
-    --bg-sidebar: #F8FAFC;
-    --bg-card: rgba(248, 250, 252, 0.95);
-    --primary: #3B5998;
-    --primary-glow: rgba(59, 89, 152, 0.08);
-    --accent-orange: #C1956B;
-    --accent-purple: #8B7BA8;
-    --accent-cyan: #6B9691;
-    --text-main: #374151;
-    --text-muted: #6B7280;
-    --border: rgba(0, 0, 0, 0.1);
-    --glass-bg: rgba(248, 250, 252, 0.85);
-    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* 背景統一冷青色系，紫色僅作點綴 */
+    --bg-base: #EAF1F1;
+    --bg-sidebar: #DEEAEA;
+    --bg-card: rgba(204, 222, 222, 0.35);
+    --primary: #5E8A8A;
+    --primary-glow: rgba(94, 138, 138, 0.12);
+    --accent-orange: #B8845A;
+    --accent-purple: #8E7A95;
+    --accent-cyan: #4D7E7E;
+    --text-main: #2A3338;
+    --text-muted: #6B7578;
+    --border: rgba(94, 138, 138, 0.18);
+    --glass-bg: rgba(255, 255, 255, 0.55);
+    --shadow-soft: 0 6px 24px rgba(40, 55, 55, 0.12);
 
-    /* Sophisticated hierarchical design tokens for sidebar */
-    --bg-course: rgba(220, 227, 238, 0.95);
-    --bg-chapter: rgba(235, 240, 248, 0.6);
-    --bg-section: rgba(248, 251, 254, 0.4);
+    /* 側邊欄層級 — 同為冷青階梯 */
+    --bg-course: rgba(204, 222, 222, 0.5);
+    --bg-chapter: rgba(214, 229, 229, 0.4);
+    --bg-section: rgba(229, 238, 238, 0.35);
 
     /* Typography hierarchy */
     --font-course: 0.95rem;
@@ -76,17 +74,14 @@
     --space-section: 52px;
 
     /* Border accents */
-    --border-course: rgba(59, 89, 152, 0.15);
-    --border-chapter: rgba(59, 89, 152, 0.12);
-    --border-section: rgba(59, 89, 152, 0.05);
-    --border-course: rgba(0, 0, 0, 0.08);
-    --border-chapter: rgba(0, 0, 0, 0.06);
-    --border-section: rgba(0, 0, 0, 0.03);
+    --border-course: rgba(94, 138, 138, 0.18);
+    --border-chapter: rgba(94, 138, 138, 0.12);
+    --border-section: rgba(94, 138, 138, 0.06);
 
     /* Hierarchical text colors */
-    --text-course: #374151;
-    --text-chapter: #4B5563;
-    --text-section: #6B7280;
+    --text-course: #2A3338;
+    --text-chapter: #4A5558;
+    --text-section: #6B7578;
 }
 
 * {
@@ -126,8 +121,8 @@ body {
 
 [data-theme="light"] .glass {
     background: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    border: 1px solid rgba(94, 138, 138, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(40, 55, 55, 0.1);
 }
 
 /* Sidebar */
@@ -216,7 +211,22 @@ body {
 }
 .search-box { position: relative; margin-top: 15px; }
 .search-box i { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
-.search-box input { width: 100%; padding: 10px 10px 10px 36px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg-base); color: var(--text-main); outline: none; }
+.search-box input { 
+    width: 100%; 
+    padding: 10px 10px 10px 36px; 
+    border-radius: 10px; 
+    border: 1px solid var(--border); 
+    background: var(--bg-base); 
+    color: var(--text-main); 
+    outline: none; 
+    transition: all 0.2s;
+}
+
+.search-box input:focus {
+    border-color: var(--primary);
+    background: var(--bg-sidebar);
+    box-shadow: 0 0 12px rgba(116, 141, 146, 0.1);
+}
 
 #sidebar-menu { flex: 1; overflow-y: auto; padding: 15px; }
 .sidebar-chapter {
@@ -243,8 +253,7 @@ body {
 }
 
 .chapter-title:hover {
-    background: var(--bg-chapter);
-    border-color: var(--border-chapter);
+    background: rgba(116, 141, 146, 0.1);
     color: var(--text-main);
 }
 
@@ -305,24 +314,23 @@ body {
 }
 
 .section-item:hover {
-    background: rgba(71, 85, 105, 0.6);
-    color: #f1f5f9;
-    border-left: 2px solid #f59e0b;
-    transform: translateX(1px);
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    background: rgba(116, 141, 146, 0.15);
+    color: var(--text-main);
+    border-left: 2px solid var(--primary);
+    transform: translateX(2px);
 }
 
 .section-item:hover::before {
-    color: #fbbf24;
+    color: var(--primary);
     opacity: 1;
 }
 
 .section-item.active {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    color: white;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-    border-left: 3px solid #f59e0b;
-    transform: translateX(2px);
+    background: linear-gradient(135deg, var(--bg-sidebar) 0%, var(--bg-base) 100%);
+    color: var(--text-main);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    border-left: 3px solid var(--primary);
+    transform: translateX(3px);
 }
 
 /* ── 主要內容 ── */
@@ -520,9 +528,9 @@ body {
 }
 
 .chapter-card:hover {
-    border-color: var(--accent-cyan);
-    box-shadow: var(--shadow-soft);
-    background: var(--primary-glow);
+    border-color: var(--primary);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    background: rgba(116, 141, 146, 0.05);
 }
 
 .chapter-card:hover::before {
@@ -566,7 +574,7 @@ body {
 .chapter-card:hover .card-icon {
     background: var(--primary);
     color: var(--bg-base);
-    border-color: var(--accent-cyan);
+    border-color: var(--primary);
 }
 
 .chapter-card:hover .card-icon::before {
@@ -679,13 +687,13 @@ body {
 }
 
 .icon-btn:hover {
-    background: var(--primary);
-    color: var(--bg-base);
+    background: rgba(116, 141, 146, 0.2);
+    color: var(--primary);
     transform: translateY(-3px) rotate(5deg);
     box-shadow:
         var(--shadow-soft),
-        0 0 15px var(--primary-glow);
-    border-color: var(--accent-cyan);
+        0 0 15px rgba(116, 141, 146, 0.1);
+    border-color: var(--primary);
 }
 
 .icon-btn:hover::before {
@@ -698,7 +706,16 @@ body {
 
 /* ── 章節內容 ── */
 .section-container { max-width: 900px; margin: 0 auto; }
-.section-block { padding: 50px; margin-bottom: 40px; border-radius: 32px; box-shadow: 0 20px 50px rgba(0,0,0,0.15); }
+.section-block { 
+    padding: 50px; 
+    margin-bottom: 40px; 
+    border-radius: 32px; 
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-soft);
+}
 .section-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; gap: 20px; }
 .section-header h1 { font-size: 2.4rem; font-weight: 900; line-height: 1.2; color: var(--text-main); }
 
@@ -751,11 +768,11 @@ td {
 tr:last-child td { border-bottom: none !important; }
 
 tr:nth-child(even) {
-    background: rgba(0, 255, 148, 0.05);
+    background: rgba(116, 141, 146, 0.05);
 }
 
 tr:hover td {
-    background: rgba(0, 255, 148, 0.1);
+    background: rgba(18, 78, 102, 0.15);
     color: var(--primary);
 }
 
@@ -811,13 +828,11 @@ tr:hover td {
 }
 
 .nav-btn:hover {
-    background: var(--primary);
-    border-color: var(--accent-cyan);
-    color: var(--bg-base) !important;
-    transform: translateY(-10px) scale(1.03) rotate(-1deg);
-    box-shadow:
-        8px 8px 0px var(--accent-cyan),
-        0 0 10px var(--primary-glow);
+    background: rgba(116, 141, 146, 0.15);
+    border-color: var(--primary);
+    color: var(--text-main) !important;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .nav-btn:hover::before {
@@ -1199,44 +1214,44 @@ tr:hover td {
 }
 
 #sidebar-chapter-menu .section-item:hover {
-    background: rgba(71, 85, 105, 0.8);
-    color: #f1f5f9;
-    border-left-color: #f59e0b;
+    background: rgba(116, 141, 146, 0.2);
+    color: var(--text-main);
+    border-left-color: var(--primary);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transform: translateX(2px);
 }
 
 #sidebar-chapter-menu .section-item:hover::before {
-    color: #fbbf24;
+    color: var(--primary);
     opacity: 1;
     transform: translateY(-50%) scale(1.05);
 }
 
 /* Active chapter state - 當前章節活躍狀態 */
 #sidebar-chapter-menu .chapter-title.active {
-    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-    color: #ffffff;
-    border-left: 4px solid #f59e0b;
+    background: linear-gradient(135deg, var(--bg-sidebar) 0%, var(--bg-base) 100%);
+    color: var(--text-main);
+    border-left: 4px solid var(--primary);
     box-shadow:
         0 4px 16px rgba(0, 0, 0, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
     font-weight: 700;
     transform: translateX(2px);
 }
 
 #sidebar-chapter-menu .chapter-title.active .arrow {
-    color: #fbbf24;
+    color: var(--primary);
     transform: rotate(90deg) scale(1.05);
 }
 
 /* Active section state - 當前小節活躍狀態 */
 #sidebar-chapter-menu .section-item.active {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    color: #ffffff;
-    border-left: 3px solid #f59e0b;
+    background: linear-gradient(135deg, var(--bg-base) 0%, var(--bg-sidebar) 100%);
+    color: var(--text-main);
+    border-left: 3px solid var(--primary);
     box-shadow:
         0 3px 12px rgba(0, 0, 0, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
     font-weight: 600;
     transform: translateX(3px);
     position: relative;
@@ -1244,11 +1259,11 @@ tr:hover td {
 
 #sidebar-chapter-menu .section-item.active::before {
     content: '●';
-    color: #fbbf24;
+    color: var(--primary);
     opacity: 1;
     font-size: 0.65rem;
     transform: translateY(-50%);
-    text-shadow: 0 0 6px rgba(251, 191, 36, 0.4);
+    text-shadow: 0 0 6px var(--primary-glow);
 }
 
 
@@ -1343,20 +1358,22 @@ tr:hover td {
 }
 
 .sidebar-subject-item:hover {
-    background: var(--primary);
-    color: white;
+    background: rgba(116, 141, 146, 0.1);
+    color: var(--primary);
     border-color: var(--primary);
-    border-left-color: white;
-    box-shadow: 0 4px 16px var(--primary-glow);
+    border-left-color: var(--primary);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     transform: translateX(3px);
 }
 
 .sidebar-subject-item.active {
-    background: var(--primary);
-    color: white;
-    border-color: var(--primary);
-    border-left-color: var(--accent-cyan);
-    box-shadow: 0 3px 12px var(--primary-glow);
+    background: rgba(18, 78, 102, 0.2);
+    color: var(--text-main);
+    border-color: rgba(116, 141, 146, 0.3);
+    border-left-color: var(--primary);
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.3),
+        inset 0 0 15px rgba(18, 78, 102, 0.1);
 }
 
 .sidebar-subject-item.coming {
